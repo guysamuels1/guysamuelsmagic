@@ -64,6 +64,7 @@
 .optional{font-weight:400;color:var(--muted);letter-spacing:0}
 @media(max-width:860px){.hero-inner{grid-template-columns:1fr;gap:40px;padding:48px 24px 56px}.hero-cards{display:none}.hero-visual{padding-bottom:0}.award-badge{position:static;margin-top:14px}.pricing-grid{grid-template-columns:1fr;gap:40px}.pricing-photo{max-width:340px}.services-grid{grid-template-columns:1fr}.about-grid{grid-template-columns:1fr}.portrait{max-width:320px}.quotes{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}}@media(max-width:640px){.nav-links li:not(.nav-cta){display:none}.nav{padding:14px 20px}}@media(max-width:480px){.form-row{grid-template-columns:1fr;gap:0}}
 </style>
+<script src="/tracking.js"></script>
 </head>
 <body id="top">
 <header>
@@ -228,7 +229,7 @@
       <span class="eyebrow">Get in touch</span>
       <h2 class="section-heading">Check my availability</h2>
       <div class="contact-grid">
-        <form class="contact-form" name="contact" method="POST" data-netlify="true">
+        <form class="contact-form" name="contact" method="POST" action="/thank-you" data-netlify="true">
           <label for="name">Your name</label>
           <input type="text" id="name" name="name" placeholder="Jane Smith" required>
           <label for="email">Email address</label>
@@ -270,6 +271,13 @@
             </div>
           </div>
           <div class="contact-detail">
+            <span class="icon">💬</span>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/447727039347?text=Hi%20Guy%2C%20I%20found%20your%20Guy%20Samuels%20Magic%20website%20and%20I%27d%20like%20to%20check%20availability%20for%20an%20event." target="_blank" rel="noopener">Send me a message</a>
+            </div>
+          </div>
+          <div class="contact-detail">
             <span class="icon">✉</span>
             <div>
               <strong>Email</strong>
@@ -295,6 +303,7 @@
     <div class="footer-links">
       <a href="https://www.instagram.com/magicpartyguy" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.facebook.com/GuySamuelsMagic" target="_blank" rel="noopener">Facebook</a>
+      <a href="#" onclick="return openCookieSettings()">Cookie settings</a>
     </div>
     <p class="footer-copy">&copy; 2026 Guy Samuels Magic · Award-winning close-up magician · Comedy Award, The Order of the Magi 2026</p>
   </div>
